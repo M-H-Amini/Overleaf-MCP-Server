@@ -25,13 +25,8 @@ Edit claude_desktop_config.json:
 {
   "mcpServers": {
     "overleaf": {
-      "command": "uv",
-      "args": [
-        "run",
-        "mcp",
-        "run",
-        "/Volumes/Life/Python/Overleaf/overleaf_mcp/__main__.py"
-      ],
+      "command": "uvx",
+      "args": ["overleaf-mcp"],
       "env": {
         "PROJECT_ID": "<YOUR_PROJECT_ID>",
         "OVERLEAF_TOKEN": "<YOUR_OVERLEAF_TOKEN>"
@@ -50,13 +45,8 @@ If you have a console script, set "command": "overleaf-mcp" and remove "args".
 {
   "mcpServers": {
     "overleaf": {
-      "command": "uv",
-      "args": [
-        "run",
-        "mcp",
-        "run",
-        "/Volumes/Life/Python/Overleaf/overleaf_mcp/__main__.py"
-      ],
+      "command": "uvx",
+      "args": ["overleaf-mcp"],
       "env": {
         "PROJECT_ID": "<YOUR_PROJECT_ID>",
         "OVERLEAF_TOKEN": "<YOUR_OVERLEAF_TOKEN>"
@@ -73,13 +63,8 @@ If you have a console script, set "command": "overleaf-mcp" and remove "args".
   "servers": {
     "my-mcp-server-overleaf": {
       "type": "stdio",
-      "command": "uv",
-      "args": [
-        "run",
-        "mcp",
-        "run",
-        "/Volumes/Life/Python/Overleaf/overleaf_mcp/__main__.py"
-      ],
+      "command": "uvx",
+      "args": ["overleaf-mcp"],
       "env": {
         "PROJECT_ID": "<YOUR_PROJECT_ID>",
         "OVERLEAF_TOKEN": "<YOUR_OVERLEAF_TOKEN>"

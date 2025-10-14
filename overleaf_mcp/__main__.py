@@ -1,5 +1,5 @@
 from mcp.server.fastmcp import FastMCP
-from mh_overleaf import MHOverleaf
+from .mh_overleaf import MHOverleaf
 import logging as log
 import os
 
@@ -33,5 +33,8 @@ def read_file(filename):
     """
     return overleaf.read_file(filename)
 
-if __name__ == "__main__":
+def main():
     mcp.run(transport='stdio')
+
+if __name__ == "__main__":
+    main()
