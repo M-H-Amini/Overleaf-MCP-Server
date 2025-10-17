@@ -77,4 +77,5 @@ If you have a console script, set "command": "overleaf-mcp" and remove "args".
 
 ## Tools
 
-<TBD>
+- **list_of_files**: List all files in the project.
+- **read_file**: Read a specified file from the project.
