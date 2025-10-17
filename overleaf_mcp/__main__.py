@@ -1,7 +1,9 @@
-from mcp.server.fastmcp import FastMCP
-from .mh_overleaf import MHOverleaf
-import logging as log
+from fastmcp import FastMCP
 import os
+import sys
+sys.path.insert(0, os.path.dirname(__file__))
+from mh_overleaf import MHOverleaf
+import logging as log
 
 mcp = FastMCP("overleaf_mcp")
 project_id = os.getenv("PROJECT_ID")
